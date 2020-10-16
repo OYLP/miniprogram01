@@ -1,0 +1,97 @@
+button[type="primary"]{
+  margin-top: 40rpx;
+  width: 80%!important;
+}
+
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+  position: relative;
+  .user_img_wrap {
+    position: relative;
+    .user_bg {
+      height: 50vh;
+      //高斯模糊
+      filter: blur(10rpx);
+    }
+
+    .user_info {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      .user_icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        color: #fff;
+        margin-top: 40rpx;
+        font-size: 40rpx;
+      }
+    }
+  }
+  .user_btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    border:1px solid greenyellow;
+    color:(greenyellow);
+    font-size: 38rpx;
+    padding: 30rpx;
+    border-radius: 10rpx;
+  }
+}
+
+.user_content {
+  position: relative;
+  .user_main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40rpx;
+    width: 90%;
+    background-color: #fff;
+    .history_wrap {
+      display: flex;
+      navigator{
+        flex: 1;
+        text-align: center;
+        .his_num {
+
+        }
+  
+        .his_name {
+  
+        }
+      }
+     
+    }
+    .orders_wrap {
+      // display: flex;
+      .order_title {
+        padding: 20rpx;
+      }
+    
+      .order_content {
+        display: flex;
+        
+        navigator {
+          flex: 1;
+          text-align: center;
+          .iconfont.icon-dingdan {
+    
+          }
+    
+          .order_name {
+    
+          }
+        }
+      }
+    }
+  }
+}

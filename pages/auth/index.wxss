@@ -1,4 +1,4 @@
-/* pages/auth/index.wxss */
+
 button[type="primary"]{
   margin-top: 40rpx;
   width: 80%!important;

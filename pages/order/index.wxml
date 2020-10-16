@@ -1,2 +1,4 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+  登录
+</button>
+  
