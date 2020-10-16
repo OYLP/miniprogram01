@@ -6,7 +6,6 @@ page,view,text,swiper,swiper-item,image,navigator {
   margin: 0;
   box-sizing: border-box;
 }
-
 /* 
 单行注释：ctrl + /
 多行注释1：CTRL + K + C
