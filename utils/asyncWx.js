@@ -62,7 +62,6 @@ export const showModal = ({content})=>{
 }
 
 //结算
-
 export const showToast = ({title})=>{
   return new Promise((resolve,reject)=>{
     wx.showToast({
@@ -74,6 +73,41 @@ export const showToast = ({title})=>{
       },
       fail: (err) => {
         reject(err)
+      }
+    });
+      
+  })
+}
+
+//获取用户信息  授权页
+export const login = ()=>{
+  return new Promise((resolve,reject)=>{
+    wx.login({
+      timeout:10000,
+      success: (result) => {
+        resolve(result)
+      },
+      fail: (err) => {
+        reject(err)
+      }
+    });
+      
+  })
+}
+
+/**
+ * 支付页面
+ * @param {支付微信小程序所需要的参数} pay 
+ */
+export const requestPayMent = (pay)=>{
+  return new Promise((resolve,reject)=>{
+    wx.requestPayment({
+      ...pay,
+      success: (result) => {
+        resolve(result)
+      },
+      fail: (e) => {
+        reject(e)
       }
     });
       
